@@ -2,9 +2,11 @@ package com.strangeSpringBootIntroduction.IntroductionToSpringBoot;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Apple {
     void eatApple()
     {
